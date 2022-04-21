@@ -5,7 +5,7 @@
 @import '../modules/button';
 
 .mobile-hero {
-    height: calc(100vh - #{$navigation-height});
+    height: calc(60vh - #{$navigation-height});
 
     padding: 1rem;
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/src/img/mobile-bg-0.jpg');
@@ -15,7 +15,7 @@
 
     &__button {
         @include button($white, $main-brown-color, 25px, 0.75rem, 1.05rem);
-        @include position(absolute, auto, auto, 5rem, 50%);
+        @include position(absolute, auto, auto, -1.5rem, 50%);
         @include box-shadow(3px 3px 4px $white);
         transform: translateX(-50%);
     }

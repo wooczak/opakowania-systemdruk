@@ -2,9 +2,9 @@
 @import '../utilities/mixins';
 
 .introduction {
-    margin-top: -1.75rem;
 
     &__title {
+        margin-top: 0.25rem;
         text-align: center;
     }
 
@@ -19,8 +19,15 @@
             margin-block: 1rem;
             width: 12.5ch;
 
+            & > i {
+                border: 1px solid $main-brown-color;
+                padding: 0.5em;
+                border-radius: 50%;
+            }
+
             & > p {
                 word-wrap: break-word;
+                height: 4.5rem;
             }
         }
 
@@ -29,5 +36,9 @@
             color: $main-brown-color;
             font-size: $sub-heading;
         }
+    }
+
+    &__text {
+        margin-top: -2rem;
     }
 }

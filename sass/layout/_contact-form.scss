@@ -44,11 +44,11 @@
             }
 
             & > button {
-                border: none;
+                border: 1px solid $white;
                 width: 100%;
-                background-color: $main-brown-color;
                 color: $white;
-                box-shadow: 2px 2px 0px $white;
+                background-color: transparent;
+                box-shadow: 4px 4px 0px $white;
                 padding: 0.4rem;
                 margin-top: 1.25rem;
             }

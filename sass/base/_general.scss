@@ -4,9 +4,28 @@
     position: relative;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 section {
-    padding-block: 2.5rem;
-    padding-inline: 0.75rem;
+    padding-block: 3.5rem;
+    padding-inline: 1rem;
+
+    &:nth-of-type(2n) {
+        background-color: $main-brown-color;
+
+        & > h1,
+        & > h2,
+        & > h3,
+        & > p {
+            color: $white;
+        }
+
+        & > h1::after {
+            background-color: $white;
+        }
+    }
 }
 
 @media (min-width: $standard-mobile) {
