@@ -13,6 +13,8 @@
     background-repeat: no-repeat;
     background-size: cover;
 
+    margin-top: 5rem;
+
     &__button {
         @include button($white, $main-brown-color, 25px, 0.75rem, 1.05rem);
         @include position(absolute, auto, auto, -1.5rem, 50%);
