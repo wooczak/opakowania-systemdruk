@@ -1,0 +1,57 @@
+@import '../utilities/variables';
+@import '../utilities/mixins';
+
+@media (min-width: $small-mobile) {
+    .contact {
+        background-color: $main-grey-color;
+        color: $white;
+
+        &__title {
+            background-color: transparent;
+            text-align: center;
+        }
+
+        &-links {
+            &-wrapper {
+                @include display-flex(center, center, row);
+
+                & > a {
+                    color: $white;
+                }
+            }
+        
+            &__icon {
+                margin-right: 1rem;
+                color: $white;
+            }  
+            
+        }
+
+        &-form {
+            margin-block: 1rem;
+
+            & > textarea,
+            & > input {
+                width: 100%;
+                padding: 0.5rem;
+                text-align: center;
+                margin-block: 0.25rem;
+                border: 2px solid $main-brown-color;
+            }
+            
+            & > textarea {
+                height: 10rem;
+            }
+
+            & > button {
+                border: none;
+                width: 100%;
+                background-color: $main-brown-color;
+                color: $white;
+                box-shadow: 2px 2px 0px $white;
+                padding: 0.4rem;
+                margin-top: 1.25rem;
+            }
+        }
+    }
+}

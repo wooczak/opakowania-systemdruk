@@ -1,0 +1,33 @@
+@mixin display-flex($justify-content, $align-items, $flex-direction: null) {
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin box-shadow($args...) {
+    -webkit-box-shadow: $args;
+    -moz-box-shadow: $args;
+    box-shadow: $args;
+}
+
+@mixin position($position, $top, $right, $bottom, $left) {
+    position: $position;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin scroll-snap-container($type) {
+    @include display-flex(space-between, center, row);
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    scroll-snap-type: $type;
+}
+
+@mixin scroll-snap-item($align) {
+    @include display-flex(center, center, row);
+    flex: none;
+    scroll-snap-align: $align;
+}

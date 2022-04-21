@@ -1,0 +1,33 @@
+@import '../utilities/variables';
+@import '../utilities/mixins';
+
+.introduction {
+    margin-top: -1.75rem;
+
+    &__title {
+        text-align: center;
+    }
+
+    &-list {
+        margin-block: 1.5rem;
+        @include display-flex(space-evenly, center);
+        flex-wrap: wrap;
+
+        &__point {
+            @include display-flex(flex-start, center, column);
+            text-align: center;
+            margin-block: 1rem;
+            width: 12.5ch;
+
+            & > p {
+                word-wrap: break-word;
+            }
+        }
+
+        &__icon {
+            margin-bottom: 0.5rem;
+            color: $main-brown-color;
+            font-size: $sub-heading;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+@import '../utilities/variables';
+@import '../utilities/variables';
+
+* {
+    font-family: 'Lato', sans-serif;
+    color: $black;
+    font-weight: $regular;
+    line-height: 1.7;
+}
+
+h1 { 
+    font-size: $big-heading; 
+    font-weight: $super-bold; 
+    background-color: $main-brown-color;
+    color: $white;
+    margin-inline: -0.25rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+h2 { font-size: $heading; }
+h3 { font-size: $sub-heading; }
+h4 { font-size: $text-highlight; }
+p { font-size: $text; } 
+

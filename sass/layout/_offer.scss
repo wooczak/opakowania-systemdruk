@@ -1,0 +1,34 @@
+@import '../utilities/mixins';
+
+.offer {
+    &__title {
+        text-align: center;
+    }
+
+    &-list {
+       @include scroll-snap-container(x mandatory);
+        margin-block: 1rem;
+
+        &-item {
+            @include scroll-snap-item(center);
+            width: 90%;
+            border: 1px solid $main-brown-color;
+            border-radius: 15px;
+            margin-right: 1rem;
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+
+            &-box,
+            &-box > img {
+                width: 100%;
+                border-radius: 15px;
+            }
+
+            &-box > figcaption {
+                text-align: center;
+            }
+        }
+    }
+}

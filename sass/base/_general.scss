@@ -1,0 +1,16 @@
+@import '../utilities/variables';
+
+* {
+    position: relative;
+}
+
+section {
+    padding-block: 2.5rem;
+    padding-inline: 0.75rem;
+}
+
+@media (min-width: $standard-mobile) {
+    section {
+        padding-inline: 5rem;
+    }
+}
